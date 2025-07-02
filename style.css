@@ -1,0 +1,35 @@
+/* style.css */
+
+/* Let the entire box act as a drag handle: */
+.siri-box {
+  -webkit-app-region: drag;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 360px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* But inputs must opt-out so you can still click/type: */
+.siri-box input {
+  -webkit-app-region: no-drag;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+/* The rest of your styles stay the same… */
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
